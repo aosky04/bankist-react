@@ -5,6 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --default-font-family: var(--font-inter), var(--font-sans);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -46,6 +47,7 @@
 }
 
 :root {
+  --font-inter: 'Inter';
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -121,8 +123,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-@theme inline {
-  --default-font-family: 'Inter', var(--font-sans);
 }
